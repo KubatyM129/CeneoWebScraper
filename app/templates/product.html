@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Projekt programistyczny</title>
+</head>
+<body>
+<nav>
+    <div class="container">
+        <a>Menu</a>
+        <div id="navbarSupportedContent">
+            <ul>
+                <li>
+                    <a href="index.html" aria-current="page">Strona Głowna</a>
+                </li>
+                <li>
+                    <a href="extraction.html">Ekstracja Opinii</a>
+                </li>
+                <li>
+                    <a href="products_list.html">Lista Produktów</a>
+                </li>
+                <li>
+                    <a href="author.html">O Autorze</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section>
+    <article>
+        <h2>Strona produktu</h2>
+
+        <table id="Table">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Opinia</th>
+                <th>Ocena</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Lorem ipsum</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Lorem ipsum2</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Lorem ipsum3</td>
+                <td>2</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <button id="download">Pobierz opinie</button>
+        <a href="charts.html">Wykresy</a>
+    </article>
+</section>
+<script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#Table').DataTable();
+        $('#exportBtn').click(function () {
+        });
+    });
+</script>
+</body>
+</html>
